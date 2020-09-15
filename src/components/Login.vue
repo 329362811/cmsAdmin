@@ -49,12 +49,14 @@ export default {
             }
           }
           this.submitBtn = false
+          let _this = this
           userLogin(params).then(res => {
             this.$message.success('登录成功')
-            this.$store.commit('set_token', res.token)
-            this.$store.commit('set_roleCodes', res.roleCodes[0])
+            debugger
+            _this.$store.commit('set_token', res.token)
+            _this.$store.commit('set_roleCodes', res.roleCodes[0])
             sessionStorage.setItem('userName', this.AccountFrom.username)
-            this.submitBtn = true
+            _this.submitBtn = true
             setTimeout(() => {
               if (this.$store.state.token) {
                 this.$router.push('/')

@@ -1,0 +1,111 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+/* em,
+strong, */
+th,
+var {
+    font-style: normal;
+    font-weight: normal
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+caption,
+th {
+    text-align: left
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+q:before,
+q:after {
+    content: ''
+}
+
+abbr,
+acronym {
+    border: 0
+}
+
+.clearfix:after,
+.clearfix:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    /*加一段内容*/
+    /* display: table; */
+    /*创建匿名的表格单元，触发bfc*/
+}
+
+.clearfix:after {
+    clear: both;
+    /*清除浮动*/
+}
+
+.clearfix {
+    zoom: 1;
+    /*为IE6，7的兼容性设置*/
+}
+
+*,
+html,
+body {
+    font-family:
+        "Microsoft YaHei",
+        "Arial",
+        "黑体",
+        "宋体",
+        sans-serif;
+}

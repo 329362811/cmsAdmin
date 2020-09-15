@@ -1,0 +1,941 @@
+/*
+**ueditor编辑器样式
+*/
+.ue-edit .edui-default .edui-editor-toolbarboxinner,
+.ue-edit .edui-editor-breadcrumb {
+  display: none;
+}
+
+.ue-edit #edui1_toolbarbox {
+  display: none;
+}
+
+.ue-edit .edui-default .edui-editor {
+  border: 1px solid #999 !important;
+}
+
+.ue-edit .edui-default .edui-editor-bottomContainer {
+  display: none;
+}
+
+.home-page .container aside .el-menu .el-menu-item.is-active {
+  background: #333744 !important;
+}
+
+.home-page .container aside .el-submenu .el-submenu .el-menu-item {
+  padding-left: 44px !important;
+}
+
+/*
+**表格样式
+*/
+#table_style {
+  width: 100%;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+#table_style .el-table {
+  border: 1px solid #d0c8c8;
+  border-top: 1px solid #d0c8c8;
+  border-bottom: 1px solid #d0c8c8;
+}
+
+#table_style .el-table th.is-leaf {
+  border: none;
+  border-right: 1px solid #d0c8c8;
+  border-bottom: 1px solid #d0c8c8;
+  background-color: #eee3e6;
+}
+
+#table_style .el-table td,
+#table_style .el-table th {
+  border-right: 1px solid #d0c8c8;
+  border-bottom: 1px solid #d0c8c8;
+  text-align: center;
+}
+
+#table_style .el-table tr:nth-child(even) {
+  background-color: #e1ebee;
+}
+
+#table_style .el-table .current-row tr,
+#table_style .el-table .current-row td {
+  background-color: lightblue !important;
+}
+
+#table_style .el-table__empty-block {
+  line-height: 60px;
+}
+
+#treeTable #table_style .el-table td:nth-child(2) {
+  text-align: left;
+}
+
+/*
+**安利图库,安利短片,安利快讯,产品资料,业务资料，表单链接，软件下载，banner,业务资讯,问答
+*/
+.picture-library .top,
+.amway-video .top,
+.amway-news .top,
+.amway-info .top,
+.amway-business .top,
+.amway-table .top,
+.software-download .top,
+.amway-banner .top,
+.user-admin .top,
+.role-manager .top,
+.busi-information .top,
+.amway-answers .top {
+  display: flex;
+  padding: 0 20px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  font-size: 14px;
+}
+
+.picture-library .top .search,
+.amway-video .top .search,
+.amway-news .top .search,
+.amway-info .top .search,
+.amway-business .top .search,
+.amway-table .top .search,
+.software-download .top .search,
+.amway-banner .top .search,
+.user-admin .top .search,
+.role-manager .top .search,
+.busi-information .top .search,
+.amway-answers .top .search {
+  margin-right: 20px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.picture-library .top .search span,
+.amway-video .top .search span,
+.amway-news .top .search span,
+.amway-info .top .search span,
+.amway-business .top .search span,
+.amway-table .top .search span,
+.software-download .top .search span,
+.amway-banner .top .search span,
+.user-admin .top .search span,
+.role-manager .top .search span,
+.busi-information .top .search span,
+.amway-answers .top .search span {
+  display: inline-block;
+  padding: 0 5px;
+  height: 35px;
+  line-height: 35px;
+  text-align: right;
+}
+
+.picture-library .top .query,
+.amway-video .top .query,
+.amway-news .top .query,
+.amway-info .top .query,
+.amway-business .top .query,
+.amway-table .top .query,
+.software-download .top .query,
+.amway-banner .top .query,
+.user-admin .top .query,
+.role-manager .top .query,
+.busi-information .top .query,
+.amway-answers .top .query {
+  margin-bottom: 15px;
+}
+
+.picture-library .top .el-input,
+.amway-video .top .el-input,
+.amway-news .top .el-input,
+.amway-info .top .el-input,
+.amway-business .top .el-input,
+.amway-table .top .el-input,
+.software-download .top .el-input,
+.amway-banner .top .el-input,
+.user-admin .top .el-input,
+.role-manager .top .el-input,
+.busi-information .top .el-input,
+.amway-answers .top .el-input {
+  width: 180px;
+  height: 35px;
+}
+
+.picture-library .top .el-input .el-input__inner,
+.amway-video .top .el-input .el-input__inner,
+.amway-news .top .el-input .el-input__inner,
+.amway-info .top .el-input .el-input__inner,
+.amway-business .top .el-input .el-input__inner,
+.amway-table .top .el-input .el-input__inner,
+.software-download .top .el-input .el-input__inner,
+.amway-banner .top .el-input .el-input__inner,
+.user-admin .top .el-input .el-input__inner,
+.role-manager .top .el-input .el-input__inner,
+.busi-information .top .el-input .el-input__inner,
+.amway-answers .top .el-input .el-input__inner {
+  height: 35px;
+  line-height: 35px;
+}
+
+.picture-library .top .el-button,
+.amway-video .top .el-button,
+.amway-news .top .el-button,
+.amway-info .top .el-button,
+.amway-business .top .el-button,
+.amway-table .top .el-button,
+.software-download .top .el-button,
+.amway-banner .top .el-button,
+.user-admin .top .el-button,
+.role-manager .top .el-button,
+.busi-information .top .el-button,
+.amway-answers .top .el-button {
+  height: 35px;
+  font-size: 14px;
+}
+
+.picture-library .module-button,
+.amway-video .module-button,
+.amway-news .module-button,
+.amway-info .module-button,
+.amway-business .module-button,
+.amway-table .module-button,
+.software-download .module-button,
+.amway-banner .module-button,
+.user-admin .module-button,
+.role-manager .module-button,
+.busi-information .module-button,
+.amway-answers .module-button {
+  width: 100%;
+  height: 35px;
+  padding: 0 40px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+
+.picture-library .module-button .el-button--primary,
+.amway-video .module-button .el-button--primary,
+.amway-news .module-button .el-button--primary,
+.amway-info .module-button .el-button--primary,
+.amway-business .module-button .el-button--primary,
+.amway-table .module-button .el-button--primary,
+.software-download .module-button .el-button--primary,
+.amway-banner .module-button .el-button--primary,
+.user-admin .module-button .el-button--primary,
+.role-manager .module-button .el-button--primary,
+.busi-information .module-button .el-button--primary,
+.amway-answers .module-button .el-button--primary {
+  width: 100px;
+  text-align: center;
+  padding: 0;
+  margin-right: 50px;
+}
+
+.picture-library .module-table,
+.amway-video .module-table,
+.amway-news .module-table,
+.amway-info .module-table,
+.amway-business .module-table,
+.amway-table .module-table,
+.software-download .module-table,
+.amway-banner .module-table,
+.user-admin .module-table,
+.role-manager .module-table,
+.busi-information .module-table,
+.amway-answers .module-table,
+.amway-contract .module-table {
+  width: 100%;
+  display: flex;
+  flex: 1 1 auto;
+  padding: 15px 15px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.picture-library .module-table .pagination,
+.amway-video .module-table .pagination,
+.amway-news .module-table .pagination,
+.amway-info .module-table .pagination,
+.amway-business .module-table .pagination,
+.amway-table .module-table .pagination,
+.software-download .module-table .pagination,
+.amway-banner .module-table .pagination,
+.user-admin .module-table .pagination,
+.role-manager .module-table .pagination,
+.busi-information .module-table .pagination,
+.amway-answers .module-table .pagination,
+.amway-contract .module-table .pagination {
+  margin-top: 20px;
+  align-items: center;
+}
+
+.picture-library a,
+.amway-video a,
+.amway-news a,
+.amway-info a,
+.amway-business a,
+.amway-table a,
+.software-download a,
+.amway-banner a,
+.user-admin a,
+.role-manager a,
+.busi-information a,
+.amway-answers a {
+  text-decoration: none;
+  color: #606266;
+}
+
+.role-manager thead .el-table-column--selection .cell label {
+  opacity: 0;
+}
+
+.role-manager thead .el-table-column--selection .cell:after {
+  content: "選擇";
+  position: absolute;
+  font-size: 14px;
+  top: 0;
+  left: 10px;
+  z-index: 10;
+}
+
+/*
+**安利短片新增页面
+*/
+.add-video .el-dialog,
+.check-video .el-dialog {
+  padding: 20px 50px;
+}
+
+.add-video .el-dialog .el-dialog__body,
+.check-video .el-dialog .el-dialog__body {
+  padding: 30px 0;
+}
+
+.add-video .el-dialog .el-dialog__header,
+.check-video .el-dialog .el-dialog__header {
+  padding: 0;
+  text-align: center;
+}
+
+.add-video .el-dialog .el-input,
+.check-video .el-dialog .el-input {
+  width: 300px;
+}
+
+.add-video .el-dialog .el-input__inner,
+.check-video .el-dialog .el-input__inner,
+.add-video .el-dialog .el-textarea__inner,
+.check-video .el-dialog .el-textarea__inner {
+  border-color: #999;
+}
+
+.add-video .el-dialog .el-textarea,
+.check-video .el-dialog .el-textarea {
+  width: 300px;
+}
+
+.add-video .el-dialog .el-form-item__label,
+.check-video .el-dialog .el-form-item__label {
+  width: 130px;
+  text-align: right;
+}
+
+.add-video .el-dialog .el-form-item__error,
+.check-video .el-dialog .el-form-item__error {
+  left: 130px;
+}
+
+.add-video .el-dialog .el-textarea__inner,
+.check-video .el-dialog .el-textarea__inner {
+  width: 300px;
+  height: 150px;
+  font-size: 16px;
+  overflow: auto;
+  resize: none;
+}
+
+.add-video .el-dialog .el-checkbox-group,
+.check-video .el-dialog .el-checkbox-group {
+  width: 65px;
+  float: left;
+}
+
+/*
+**安利快讯新增页面
+*/
+.amway-news .add-news .el-dialog {
+  padding: 20px 50px;
+}
+
+.amway-news .add-news .el-dialog .el-dialog__header {
+  padding: 0;
+  text-align: center;
+}
+
+.amway-news .add-news .el-dialog .el-input {
+  width: 350px;
+  float: left;
+}
+
+.amway-news .add-news .el-dialog .el-input__inner,
+.amway-news .add-news .el-dialog .el-textarea__inner {
+  border-color: #999;
+}
+
+.amway-news .add-news .el-dialog .el-textarea {
+  width: 350px;
+  float: left;
+}
+
+.amway-news .add-news .el-dialog .el-form-item__label {
+  width: 100px;
+  text-align: right;
+}
+
+.amway-news .add-news .el-dialog .el-form-item__error {
+  left: 100px;
+}
+
+.amway-news .add-news .el-dialog .el-textarea__inner {
+  width: 350px;
+  height: 150px;
+  font-size: 16px;
+  overflow: auto;
+  resize: none;
+}
+
+.amway-news .add-news .el-dialog .el-checkbox-group {
+  width: 65px;
+  float: left;
+}
+
+.amway-news .add-news .language .choose .el-checkbox__label {
+  font-size: 16px;
+  color: red;
+}
+
+.amway-news .add-news .language .choose .el-checkbox__inner {
+  border-color: #999;
+}
+
+/*
+**软件下载页面
+*/
+.add-software-download .el-input__inner {
+  color: #606266 !important;
+}
+
+.add-software-download .el-form-item__label {
+  width: 120px;
+  text-align: right;
+  float: left;
+}
+
+.add-software-download .el-select {
+  float: left;
+}
+
+.add-software-download .el-input {
+  width: 350px;
+  float: left;
+}
+
+.add-software-download .el-form-item__error {
+  left: 120px;
+}
+
+.add-software-download .el-form-item {
+  margin-left: 30px;
+}
+
+/*
+**产品资料新增页面(富文本)
+*/
+.amway-info .add-info .el-dialog {
+  padding: 20px 50px;
+  overflow-y: auto;
+}
+
+.amway-info .add-info .el-dialog .el-input__inner {
+  color: #606266;
+}
+
+.amway-info .add-info .el-dialog .el-dialog__header {
+  padding: 0;
+  text-align: center;
+}
+
+.amway-info .add-info .el-dialog .el-dialog__body {
+  padding: 30px 0;
+}
+
+.amway-info .add-info .el-input--suffix {
+  width: 350px;
+}
+
+.amway-info .add-info .el-form-item__label {
+  width: 110px;
+  text-align: right;
+}
+
+.amway-info .add-info .el-form-item__error {
+  left: 110px;
+}
+
+/*
+**banner活动
+*/
+.amway-banner {
+  font-size: 14px;
+}
+
+.amway-banner .top .el-input--suffix .el-input__inner {
+  width: 200px;
+  height: 35px;
+}
+
+.amway-banner .top .el-input {
+  width: 200px;
+  height: 35px;
+}
+
+.amway-banner .top .el-input .el-input__inner {
+  height: 35px;
+  line-height: 35px;
+}
+
+.amway-banner .top .banner-status {
+  width: 70px;
+}
+
+.amway-banner .top .el-button {
+  height: 35px;
+  font-size: 14px;
+  float: right;
+  margin-left: 20px;
+}
+
+.amway-banner .top .el-button span {
+  line-height: 0;
+}
+
+.amway-banner .top .search-time span {
+  float: left;
+}
+
+.amway-banner .top .acitve-time {
+  float: left;
+}
+
+.amway-banner .top .acitve-time .el-range-editor.el-input__inner {
+  height: 35px;
+}
+
+.amway-banner .top .acitve-time .el-range-separator {
+  height: 35px;
+  line-height: 35px;
+}
+
+.amway-banner .top .acitve-time .el-date-editor .el-range__icon {
+  height: 35px;
+  line-height: 35px;
+}
+
+.amway-banner .top .acitve-time .el-date-editor .el-range__close-icon {
+  height: 35px;
+  line-height: 35px;
+}
+
+.amway-banner .add-banner .el-input {
+  width: 300px;
+  height: 40px;
+  float: left;
+}
+
+.amway-banner .add-banner .el-input--suffix .el-input__inner {
+  width: 300px;
+}
+
+.amway-banner .add-banner .el-dialog {
+  padding: 20px 50px;
+  overflow-y: auto;
+}
+
+.amway-banner .add-banner .el-dialog .el-dialog__header {
+  padding: 0;
+  text-align: center;
+}
+
+.amway-banner .add-banner .el-dialog .el-dialog__body {
+  padding: 30px 0;
+}
+
+.amway-banner .add-banner .el-form-item__label {
+  width: 140px;
+  text-align: right;
+}
+
+.amway-banner .add-banner .el-form-item__error {
+  left: 140px;
+}
+
+/*
+**Answers新增页面
+*/
+#add-answers .el-dialog {
+  padding: 20px 35px;
+  overflow-y: auto;
+}
+
+#add-answers .el-dialog .el-dialog__header {
+  padding: 0;
+  text-align: center;
+}
+
+#add-answers .el-dialog .el-dialog__body {
+  padding: 30px 0;
+}
+
+#add-answers .el-input {
+  width: 330px;
+  float: left;
+}
+
+#add-answers .el-form-item {
+  margin-bottom: 20px;
+}
+
+#add-answers .el-input__inner,
+#add-answers .el-textarea__inner {
+  border-color: #999;
+}
+
+#add-answers .el-textarea {
+  width: 300px;
+  float: left;
+}
+
+#add-answers .el-form-item__label {
+  width: 130px;
+  text-align: right;
+}
+
+#add-answers .el-form-item__error {
+  left: 130px;
+  color: #f56c6c;
+}
+
+#add-answers .el-textarea__inner {
+  width: 300px;
+  height: 150px;
+  font-size: 16px;
+  overflow: auto;
+  resize: none;
+}
+
+#add-answers .el-checkbox-group {
+  width: 65px;
+  float: left;
+}
+
+#add-answers .ue-edit {
+  float: left;
+}
+
+/*
+**资源管理
+*/
+.amway-template .add-template .el-dialog {
+  padding: 20px 50px;
+}
+
+.amway-template .add-template .el-dialog .el-dialog__body {
+  padding: 15px 0;
+}
+
+.amway-template .add-template .el-dialog .el-dialog__header {
+  padding: 0;
+  text-align: center;
+}
+
+.amway-template .add-template .el-dialog .el-select {
+  float: left;
+}
+
+.amway-template .add-template .el-dialog .el-input {
+  width: 300px;
+  float: left;
+}
+
+.amway-template .add-template .el-dialog .el-input__inner,
+.amway-template .add-template .el-dialog .el-textarea__inner {
+  border-color: #999;
+}
+
+.amway-template .add-template .el-dialog .el-textarea {
+  width: 300px;
+  float: left;
+}
+
+.amway-template .add-template .el-dialog .el-form-item__label {
+  width: 130px;
+  text-align: right;
+}
+
+.amway-template .add-template .el-dialog .el-form-item__error {
+  left: 130px;
+}
+
+.amway-template .add-template .el-dialog .el-textarea__inner {
+  width: 300px;
+  height: 150px;
+  font-size: 16px;
+  overflow: auto;
+  resize: none;
+}
+
+.amway-template .add-template .el-dialog .el-checkbox-group {
+  width: 65px;
+  float: left;
+}
+
+.amway-template .add-template .show-catalog .el-dialog {
+  min-height: 450px;
+  position: relative;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+}
+
+/*
+**用户管理
+*/
+.user-admin .add-user .el-dialog {
+  padding: 20px 50px;
+}
+
+.user-admin .add-user .el-dialog .el-dialog__body {
+  padding: 30px 0;
+}
+
+.user-admin .add-user .el-dialog .el-dialog__header {
+  padding: 0;
+  text-align: center;
+}
+
+.user-admin .add-user .el-dialog .el-input {
+  width: 300px;
+  float: left;
+}
+
+.user-admin .add-user .el-dialog .el-radio-group {
+  float: left;
+  line-height: 40px;
+}
+
+.user-admin .add-user .el-dialog .el-radio-group .el-radio {
+  height: 40px;
+  line-height: 40px;
+}
+
+.user-admin .add-user .el-dialog .el-input__inner,
+.user-admin .add-user .el-dialog .el-textarea__inner {
+  border-color: #999;
+}
+
+.user-admin .add-user .el-dialog .el-select {
+  float: left;
+}
+
+.user-admin .add-user .el-dialog .el-textarea {
+  width: 300px;
+  float: left;
+}
+
+.user-admin .add-user .el-dialog .el-form-item__label {
+  width: 130px;
+  text-align: right;
+}
+
+.user-admin .add-user .el-dialog .el-form-item__error {
+  left: 130px;
+}
+
+.user-admin .add-user .el-dialog .el-textarea__inner {
+  width: 300px;
+  height: 150px;
+  font-size: 16px;
+  overflow: auto;
+  resize: none;
+}
+
+.user-admin .add-user .el-dialog .el-checkbox-group {
+  width: 65px;
+  float: left;
+}
+
+.user-admin .add-user .c-button {
+  padding: 0 115px;
+}
+
+.user-admin .add-user .c-button .el-button {
+  margin-left: 50px;
+}
+
+.role-manager .add-role .el-dialog {
+  padding: 20px 50px;
+}
+
+.role-manager .add-role .el-dialog .el-dialog__body {
+  padding: 30px 0;
+}
+
+.role-manager .add-role .el-dialog .el-dialog__header {
+  padding: 0;
+  text-align: center;
+}
+
+.role-manager .add-role .el-dialog .el-input {
+  width: 300px;
+  float: left;
+}
+
+.role-manager .add-role .el-dialog .el-input__inner,
+.role-manager .add-role .el-dialog .el-textarea__inner {
+  border-color: #999;
+  float: left;
+}
+
+.role-manager .add-role .el-dialog .el-textarea {
+  width: 300px;
+  float: left;
+}
+
+.role-manager .add-role .el-dialog .el-form-item__label {
+  width: 130px;
+  text-align: right;
+}
+
+.role-manager .add-role .el-dialog .el-form-item__error {
+  left: 130px;
+}
+
+.role-manager .add-role .el-dialog .el-radio-group {
+  float: left;
+  line-height: 40px;
+}
+
+.role-manager .add-role .el-dialog .el-radio-group .el-radio {
+  height: 40px;
+  line-height: 40px;
+}
+
+.role-manager .add-role .el-dialog .el-textarea__inner {
+  width: 300px;
+  height: 150px;
+  font-size: 16px;
+  overflow: auto;
+  resize: none;
+}
+
+.role-manager .add-role .el-dialog .el-checkbox-group {
+  width: 65px;
+  float: left;
+}
+
+.role-manager .add-role .el-dialog .c-button {
+  padding: 0 115px;
+}
+
+.role-manager .add-role .el-dialog .c-button .el-button {
+  margin-left: 50px;
+}
+
+.role-manager .add-role .show-catalog .el-dialog {
+  min-height: 450px;
+  position: relative;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+}
+
+.remind .el-dialog__body {
+  text-align: center;
+}
+
+.amway-info .loading,
+.add-software-download .loading,
+.add-answers .loading,
+.add-video .loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(153, 153, 153, 0.5);
+  z-index: 10;
+}
+
+.amway-info .loading .el-loading-spinner,
+.add-software-download .loading .el-loading-spinner,
+.add-answers .loading .el-loading-spinner,
+.add-video .loading .el-loading-spinner {
+  font-size: 30px;
+}
+
+.picture-library .loading {
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  top: 100px;
+  left: 50%;
+  margin-left: -250px;
+  background-color: rgba(153, 153, 153, 0.5);
+  z-index: 10;
+}
+
+.picture-library .loading .el-loading-spinner {
+  font-size: 30px;
+}
+
+/*
+**主页
+*/
+.home-page aside .el-tree {
+  min-height: 500px;
+  background-color: #f1e6e6;
+  color: #303133;
+}
+
+.home-page aside .el-tree__empty-block {
+  min-height: 500px;
+}
+
+.home-page aside .el-tree-node__content {
+  height: 40px;
+}
+
+.home-page aside .el-tree-node:focus>.el-tree-node__content {
+  background-color: #f1e6e6;
+}
+
+.home-page aside .el-tree-node.is-current.is-focusable>.el-tree-node__content {
+  background-color: #b0c2ca;
+  color: #303133;
+}
+
+.home-page aside .el-tree-node>.el-tree-node__content:hover {
+  background-color: #c8d5da;
+  color: #303133;
+}
+
+.home-page aside .el-tree-node__label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.home-page .breadcrumb-head .el-breadcrumb__inner {
+  color: blue;
+}

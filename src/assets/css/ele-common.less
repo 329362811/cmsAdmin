@@ -1,0 +1,879 @@
+/*
+**ueditor编辑器样式
+*/
+.ue-edit {
+
+    .edui-default .edui-editor-toolbarboxinner,
+    .edui-editor-breadcrumb {
+        display: none;
+    }
+
+    #edui1_toolbarbox {
+        display: none;
+    }
+
+    .edui-default .edui-editor {
+        border: 1px solid #999 !important;
+    }
+
+    .edui-default .edui-editor-bottomContainer {
+        display: none;
+    }
+}
+
+
+.home-page {
+    .container aside .el-menu .el-menu-item.is-active {
+        background: #333744 !important;
+    }
+
+    .container aside .el-submenu .el-submenu .el-menu-item {
+        padding-left: 44px !important;
+    }
+}
+
+/*
+**表格样式
+*/
+#table_style {
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+
+    .el-table {
+        border: 1px solid #d0c8c8;
+        border-top: 1px solid #d0c8c8;
+        border-bottom: 1px solid #d0c8c8;
+
+        th.is-leaf {
+            border: none;
+            border-right: 1px solid #d0c8c8;
+            border-bottom: 1px solid #d0c8c8;
+            background-color: #eee3e6;
+        }
+
+        td,
+        th {
+            border-right: 1px solid #d0c8c8;
+            border-bottom: 1px solid #d0c8c8;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #e1ebee;
+        }
+
+        .current-row {
+
+            tr,
+            td {
+                background-color: lightblue !important;
+            }
+        }
+    }
+
+    .el-table__empty-block {
+        line-height: 60px;
+    }
+}
+
+#treeTable {
+    #table_style {
+        .el-table {
+            td:nth-child(2) {
+                text-align: left;
+            }
+        }
+    }
+}
+
+/*
+**安利图库,安利短片,安利快讯,产品资料,业务资料，表单链接，软件下载，banner,业务资讯,问答
+*/
+.picture-library,
+.amway-video,
+.amway-news,
+.amway-info,
+.amway-business,
+.amway-table,
+.software-download,
+.amway-banner,
+.user-admin,
+.role-manager,
+.busi-information,
+.amway-answers {
+    .top {
+        display: flex;
+        padding: 0 20px;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        font-size: 14px;
+
+        .search {
+            margin-right: 20px;
+            margin-bottom: 15px;
+            overflow: hidden;
+
+            span {
+                display: inline-block;
+                padding: 0 5px;
+                height: 35px;
+                line-height: 35px;
+                text-align: right
+            }
+        }
+
+        .query {
+            margin-bottom: 15px;
+        }
+
+        .el-input {
+            width: 180px;
+            height: 35px;
+
+            .el-input__inner {
+                height: 35px;
+                line-height: 35px;
+            }
+        }
+
+        .el-button {
+            height: 35px;
+            font-size: 14px;
+        }
+    }
+
+    .module-button {
+        width: 100%;
+        height: 35px;
+        padding: 0 40px;
+        display: flex;
+        box-sizing: border-box;
+        justify-content: flex-start;
+
+        .el-button--primary {
+            width: 100px;
+            text-align: center;
+            padding: 0;
+            margin-right: 50px;
+        }
+    }
+
+    .module-table {
+        width: 100%;
+        display: flex;
+        flex: 1 1 auto;
+        padding: 15px 15px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+
+        .pagination {
+            margin-top: 20px;
+            align-items: center;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #606266;
+    }
+}
+
+.role-manager {
+    thead .el-table-column--selection .cell label {
+        opacity: 0;
+    }
+
+    thead .el-table-column--selection .cell:after {
+        content: "選擇";
+        position: absolute;
+        font-size: 14px;
+        top: 0;
+        left: 10px;
+        z-index: 10;
+    }
+}
+
+/*
+**安利短片新增页面
+*/
+.add-video,
+.check-video {
+    .el-dialog {
+        padding: 20px 50px;
+
+        .el-dialog__body {
+            padding: 30px 0;
+        }
+
+        .el-dialog__header {
+            padding: 0;
+            text-align: center;
+        }
+
+        .el-input {
+            width: 300px;
+        }
+
+        .el-input__inner,
+        .el-textarea__inner {
+            border-color: #999;
+        }
+
+        .el-textarea {
+            width: 300px;
+        }
+
+        .el-form-item__label {
+            width: 130px;
+            text-align: right;
+        }
+
+        .el-form-item__error {
+            left: 130px;
+        }
+
+        .el-textarea__inner {
+            width: 300px;
+            height: 150px;
+            font-size: 16px;
+            overflow: auto;
+            resize: none;
+        }
+
+        .el-checkbox-group {
+            width: 65px;
+            float: left;
+        }
+    }
+}
+
+/*
+**安利快讯新增页面
+*/
+.amway-news {
+    .add-news {
+        .el-dialog {
+            padding: 20px 50px;
+
+            .el-dialog__header {
+                padding: 0;
+                text-align: center;
+            }
+
+            .el-input {
+                width: 350px;
+                float: left;
+            }
+
+            .el-input__inner,
+            .el-textarea__inner {
+                border-color: #999;
+            }
+
+            .el-textarea {
+                width: 350px;
+                float: left;
+            }
+
+            .el-form-item__label {
+                width: 100px;
+                text-align: right;
+            }
+
+            .el-form-item__error {
+                left: 100px;
+            }
+
+            .el-textarea__inner {
+                width: 350px;
+                height: 150px;
+                font-size: 16px;
+                overflow: auto;
+                resize: none;
+            }
+
+            .el-checkbox-group {
+                width: 65px;
+                float: left;
+            }
+        }
+
+        .language {
+            .choose {
+                .el-checkbox__label {
+                    font-size: 16px;
+                    color: red;
+                }
+
+                .el-checkbox__inner {
+                    border-color: #999;
+                }
+            }
+        }
+    }
+}
+
+/*
+**软件下载页面
+*/
+.add-software-download {
+    .el-input__inner {
+        color: #606266 !important;
+    }
+
+    .el-form-item__label {
+        width: 120px;
+        text-align: right;
+        float: left;
+    }
+
+    .el-select {
+        float: left;
+    }
+
+    .el-input {
+        width: 350px;
+        float: left;
+    }
+
+    .el-form-item__error {
+        left: 120px;
+    }
+
+    .el-form-item {
+        margin-left: 30px;
+    }
+}
+
+
+/*
+**产品资料新增页面(富文本)
+*/
+.amway-info {
+    .add-info {
+        .el-dialog {
+            padding: 20px 50px;
+            overflow-y: auto;
+
+            .el-input__inner {
+                color: #606266;
+            }
+
+            .el-dialog__header {
+                padding: 0;
+                text-align: center;
+            }
+
+            .el-dialog__body {
+                padding: 30px 0;
+            }
+        }
+
+        .el-input--suffix {
+            width: 350px;
+        }
+
+        .el-form-item__label {
+            width: 110px;
+            text-align: right;
+        }
+
+        .el-form-item__error {
+            left: 110px;
+        }
+    }
+}
+
+/*
+**banner活动
+*/
+.amway-banner {
+    font-size: 14px;
+
+    .top {
+        .el-input--suffix .el-input__inner {
+            width: 200px;
+            height: 35px;
+        }
+
+        .el-input {
+            width: 200px;
+            height: 35px;
+
+            .el-input__inner {
+                height: 35px;
+                line-height: 35px;
+            }
+        }
+
+        .banner-status {
+            width: 70px;
+        }
+
+        .el-button {
+            height: 35px;
+            font-size: 14px;
+            float: right;
+            margin-left: 20px;
+
+            span {
+                line-height: 0;
+            }
+        }
+
+        .search-time {
+            span {
+                float: left;
+            }
+        }
+
+        .acitve-time {
+            float: left;
+
+            .el-range-editor.el-input__inner {
+                height: 35px;
+            }
+
+            .el-range-separator {
+                height: 35px;
+                line-height: 35px;
+            }
+
+            .el-date-editor .el-range__icon {
+                height: 35px;
+                line-height: 35px;
+            }
+
+            .el-date-editor .el-range__close-icon {
+                height: 35px;
+                line-height: 35px;
+            }
+        }
+    }
+
+    .add-banner {
+        .el-input {
+            width: 300px;
+            height: 40px;
+            float: left;
+        }
+
+        .el-input--suffix .el-input__inner {
+            width: 300px;
+        }
+
+        .el-dialog {
+            padding: 20px 50px;
+            overflow-y: auto;
+
+            .el-dialog__header {
+                padding: 0;
+                text-align: center;
+            }
+
+            .el-dialog__body {
+                padding: 30px 0;
+            }
+        }
+
+        .el-form-item__label {
+            width: 140px;
+            text-align: right;
+        }
+
+        .el-form-item__error {
+            left: 140px;
+        }
+    }
+}
+
+/*
+**Answers新增页面
+*/
+#add-answers {
+    .el-dialog {
+        padding: 20px 35px;
+        overflow-y: auto;
+
+        .el-dialog__header {
+            padding: 0;
+            text-align: center;
+        }
+
+        .el-dialog__body {
+            padding: 30px 0;
+        }
+    }
+
+
+    .el-input {
+        width: 330px;
+        float: left;
+    }
+
+    .el-form-item {
+        margin-bottom: 20px;
+    }
+
+    .el-input__inner,
+    .el-textarea__inner {
+        border-color: #999;
+    }
+
+    .el-textarea {
+        width: 300px;
+        float: left;
+    }
+
+    .el-form-item__label {
+        width: 130px;
+        text-align: right;
+    }
+
+    .el-form-item__error {
+        left: 130px;
+        color: #f56c6c;
+    }
+
+    .el-textarea__inner {
+        width: 300px;
+        height: 150px;
+        font-size: 16px;
+        overflow: auto;
+        resize: none;
+    }
+
+    .el-checkbox-group {
+        width: 65px;
+        float: left;
+    }
+
+    .ue-edit {
+        float: left;
+    }
+}
+
+
+/*
+**资源管理
+*/
+.amway-template {
+    .add-template {
+        .el-dialog {
+            padding: 20px 50px;
+
+            .el-dialog__body {
+                padding: 15px 0;
+            }
+
+            .el-dialog__header {
+                padding: 0;
+                text-align: center;
+            }
+
+            .el-select {
+                float: left;
+            }
+
+            .el-input {
+                width: 300px;
+                float: left;
+            }
+
+            .el-input__inner,
+            .el-textarea__inner {
+                border-color: #999;
+            }
+
+            .el-textarea {
+                width: 300px;
+                float: left;
+            }
+
+            .el-form-item__label {
+                width: 130px;
+                text-align: right;
+            }
+
+            .el-form-item__error {
+                left: 130px;
+            }
+
+            .el-textarea__inner {
+                width: 300px;
+                height: 150px;
+                font-size: 16px;
+                overflow: auto;
+                resize: none;
+            }
+
+            .el-checkbox-group {
+                width: 65px;
+                float: left;
+            }
+        }
+
+        .show-catalog {
+            .el-dialog {
+                min-height: 450px;
+                position: relative;
+                padding-bottom: 60px;
+                box-sizing: border-box;
+            }
+        }
+    }
+}
+
+/*
+**用户管理
+*/
+.user-admin {
+    .add-user {
+        .el-dialog {
+            padding: 20px 50px;
+
+            .el-dialog__body {
+                padding: 30px 0;
+            }
+
+            .el-dialog__header {
+                padding: 0;
+                text-align: center;
+            }
+
+            .el-input {
+                width: 300px;
+                float: left;
+            }
+
+            .el-radio-group {
+                float: left;
+                line-height: 40px;
+
+                .el-radio {
+                    height: 40px;
+                    line-height: 40px;
+                }
+            }
+
+            .el-input__inner,
+            .el-textarea__inner {
+                border-color: #999;
+            }
+
+            .el-select {
+                float: left;
+            }
+
+            .el-textarea {
+                width: 300px;
+                float: left;
+            }
+
+            .el-form-item__label {
+                width: 130px;
+                text-align: right;
+            }
+
+            .el-form-item__error {
+                left: 130px;
+            }
+
+            .el-textarea__inner {
+                width: 300px;
+                height: 150px;
+                font-size: 16px;
+                overflow: auto;
+                resize: none;
+            }
+
+            .el-checkbox-group {
+                width: 65px;
+                float: left;
+            }
+        }
+
+        .c-button {
+            padding: 0 115px;
+
+            .el-button {
+                margin-left: 50px;
+            }
+        }
+    }
+}
+
+.role-manager {
+    .add-role {
+        .el-dialog {
+            padding: 20px 50px;
+
+            .el-dialog__body {
+                padding: 30px 0;
+            }
+
+            .el-dialog__header {
+                padding: 0;
+                text-align: center;
+            }
+
+            .el-input {
+                width: 300px;
+                float: left;
+            }
+
+            .el-input__inner,
+            .el-textarea__inner {
+                border-color: #999;
+                float: left;
+            }
+
+            .el-textarea {
+                width: 300px;
+                float: left;
+            }
+
+            .el-form-item__label {
+                width: 130px;
+                text-align: right;
+            }
+
+            .el-form-item__error {
+                left: 130px;
+            }
+
+            .el-radio-group {
+                float: left;
+                line-height: 40px;
+
+                .el-radio {
+                    height: 40px;
+                    line-height: 40px;
+                }
+            }
+
+            .el-textarea__inner {
+                width: 300px;
+                height: 150px;
+                font-size: 16px;
+                overflow: auto;
+                resize: none;
+            }
+
+            .el-checkbox-group {
+                width: 65px;
+                float: left;
+            }
+
+            .c-button {
+                padding: 0 115px;
+
+                .el-button {
+                    margin-left: 50px;
+                }
+            }
+        }
+
+        .show-catalog {
+            .el-dialog {
+                min-height: 450px;
+                position: relative;
+                padding-bottom: 60px;
+                box-sizing: border-box;
+            }
+        }
+    }
+}
+
+.remind {
+    .el-dialog__body {
+        text-align: center
+    }
+}
+
+.amway-info,
+.add-software-download,
+.add-answers,
+.add-video {
+    .loading {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(153, 153, 153, .5);
+        z-index: 10;
+
+        .el-loading-spinner {
+            font-size: 30px;
+        }
+    }
+}
+
+.picture-library {
+    .loading {
+        position: absolute;
+        width: 500px;
+        height: 400px;
+        top: 100px;
+        left: 50%;
+        margin-left: -250px;
+        background-color: rgba(153, 153, 153, .5);
+        z-index: 10;
+
+        .el-loading-spinner {
+            font-size: 30px;
+        }
+    }
+}
+
+/*
+**主页
+*/
+.home-page {
+    aside {
+        .el-tree {
+            min-height: 500px;
+            background-color: #f1e6e6;
+            color: #303133;
+        }
+
+        .el-tree__empty-block {
+            min-height: 500px;
+        }
+
+        .el-tree-node__content {
+            height: 40px;
+        }
+
+        .el-tree-node:focus>.el-tree-node__content {
+            background-color: #f1e6e6;
+        }
+
+        .el-tree-node.is-current.is-focusable>.el-tree-node__content {
+            background-color: #b0c2ca;
+            color: #303133;
+        }
+
+        .el-tree-node>.el-tree-node__content:hover {
+            background-color: #c8d5da;
+            color: #303133;
+        }
+
+        .el-tree-node__label {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+    .breadcrumb-head {
+        .el-breadcrumb__inner {
+            color: blue;
+        }
+    }
+}

@@ -10,7 +10,20 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      // serviceUrl = "http://amwayecard-dev.amwaynet.com.cn";
+      /* '/pcsignup-service': { */
+      '/example': {
+        target: // 'http://10.210.81.99:8080'
+          //'http://10.210.81.99:8080/pcsignup-service',
+          'https://easy-mock.com/mock/5f5b32bd9ff3095b55ad86bc/example', //测试地址
+        changeOrigin: true,
+        pathRewrite: {
+          /* '^/pcsignup-service': '' */
+          '^/example': ''
+        }
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST

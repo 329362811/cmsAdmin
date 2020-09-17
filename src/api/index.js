@@ -2,11 +2,12 @@ import Axios from '@/axios'
 
 Axios.defaults.withCredentials = true;
 Axios.defaults.baseURL = '/example'
+export const countXXX = 'https://easy-mock.com/mock/5f5b32bd9ff3095b55ad86bc/example'
 /*
  **登录接口
  */
 export const userLogin = data => {
-    return Axios.post('https://easy-mock.com/mock/5f5b32bd9ff3095b55ad86bc/example/user/login', data)
+    return Axios.post(countXXX + '/user/login', data)
 }
 /*
  *目录菜单查询
